@@ -1,0 +1,29 @@
+{
+  "criticalAnchors": [
+    {
+      "name": "Pokémon Section",
+      "anchor": "#pokemon",
+      "expectedContent": "Pokémon"
+    },
+    {
+      "name": "Berries Section",
+      "anchor": "#berries",
+      "expectedContent": "Berries"
+    },
+    {
+      "name": "Evolution Section",
+      "anchor": "#evolution",
+      "expectedContent": "Evolution"
+    },
+    {
+      "name": "Moves Section",
+      "anchor": "#moves",
+      "expectedContent": "Moves"
+    },
+    {
+      "name": "Items Section",
+      "anchor": "#items",
+      "expectedContent": "Items"
+    }
+  ]
+}

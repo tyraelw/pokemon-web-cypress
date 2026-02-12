@@ -1,0 +1,19 @@
+{
+  "mainNavigationLinks": [
+    {
+      "name": "About Page",
+      "linkKey": "about",
+      "expectedUrl": "about"
+    },
+    {
+      "name": "REST API Documentation",
+      "linkKey": "docs",
+      "expectedUrl": "docs/v2"
+    },
+    {
+      "name": "GraphQL Documentation",
+      "linkKey": "graphql",
+      "expectedUrl": "docs/graphql"
+    }
+  ]
+}
