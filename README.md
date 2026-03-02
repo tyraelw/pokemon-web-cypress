@@ -305,7 +305,6 @@ For questions or feedback: tyrael78w@gmail.com
 ## 🔗 Related Projects
 - [E-commerce Testing Suite](https://github.com/tyraelw/cypress-ecommerce-testing) - E2E testing with Cypress
 - [Trello API Testing](https://github.com/tyraelw/trello-api-testing) - REST API automation with Postman
-- [TodoMVC Testing Suite](https://github.com/tyraelw/todo-web-cypress) - E2E testing with Custom Commands
 
 ---
 ⭐ If you find this project helpful, please consider giving it a star!
