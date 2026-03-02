@@ -1,37 +1,44 @@
 # PokéAPI E2E Testing Suite
-
-![Cypress](https://img.shields.io/badge/Cypress-17202C?style=flat&logo=cypress&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![Page Object Model](https://img.shields.io/badge/POM-Design_Pattern-blue)
+![Cypress](https://img.shields.io/badge/Cypress-JavaScript-green)
+![Testing](https://img.shields.io/badge/Testing-E2E-blue)
+![POM](https://img.shields.io/badge/Pattern-Page_Object_Model-orange)
 
 A comprehensive end-to-end testing suite for the PokéAPI documentation website using Cypress with Page Object Model design pattern. This project demonstrates professional test automation patterns including navigation testing, search functionality validation, and responsive design verification.
 
-**Application Under Test:** [pokeapi.co](https://pokeapi.co/)
+Application Under Test: pokeapi.co
+
+---
 
 ## 📋 Table of Contents
-- [Overview](#-overview)
-- [Features](#-features)
-- [Project Structure](#-project-structure)
-- [Prerequisites](#-prerequisites)
-- [Installation](#-installation)
-- [Running Tests](#-running-tests)
-- [Test Scenarios](#-test-scenarios)
-- [Page Object Model](#-page-object-model)
-- [Best Practices](#-best-practices-implemented)
-- [Author](#-author)
+- [Overview](#overview)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running Tests](#running-tests)
+- [Test Scenarios](#test-scenarios)
+- [Page Object Model](#page-object-model)
+- [Best Practices](#best-practices)
+- [Author](#author)
+
+---
 
 ## 🎯 Overview
-
 This testing suite automates validation of the PokéAPI documentation website, covering homepage navigation, API documentation search, code examples verification, and responsive design across multiple viewports.
 
-## ✨ Features
+---
 
-- ✅ **Page Object Model (POM)** - Clean separation of concerns
-- ✅ **Data-Driven Testing** - JSON fixtures for test data
-- ✅ **Advanced DOM Navigation** - .nextUntil() pattern for content location
-- ✅ **Responsive Testing** - Mobile and tablet viewport validation
-- ✅ **Stale Element Handling** - Re-query pattern for reliability
-- ✅ **Conditional State Management** - Handles collapsed/expanded UI
-- ✅ **Video Recording** - Automatic recording of test runs
-- ✅ **Screenshot on Failure** - Easy debugging
+## ✨ Features
+✅ **Page Object Model (POM)** - Clean separation of concerns  
+✅ **Data-Driven Testing** - JSON fixtures for test data  
+✅ **Advanced DOM Navigation** - .nextUntil() pattern for content location  
+✅ **Responsive Testing** - Mobile and tablet viewport validation  
+✅ **Stale Element Handling** - Re-query pattern for reliability  
+✅ **Conditional State Management** - Handles collapsed/expanded UI  
+✅ **Video Recording** - Automatic recording of test runs  
+✅ **Screenshot on Failure** - Easy debugging  
+
+---
 
 ## 📁 Project Structure
 ```
@@ -59,8 +66,9 @@ pokemon-web-cypress/
 └── README.md                           
 ```
 
-## 🔧 Prerequisites
+---
 
+## 🔧 Prerequisites
 - Node.js (v14 or higher)
 - npm or yarn
 - Modern web browser (Chrome, Firefox, Edge)
@@ -70,11 +78,13 @@ node --version
 npm --version
 ```
 
+---
+
 ## 📥 Installation
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/pokemon-web-cypress.git
+git clone https://github.com/tyraelw/pokemon-web-cypress.git
 cd pokemon-web-cypress
 ```
 
@@ -83,13 +93,14 @@ cd pokemon-web-cypress
 npm install
 ```
 
+---
+
 ## 🚀 Running Tests
 
 ### Interactive Mode (Recommended for development)
 ```bash
 npm run cypress:open
 ```
-
 Best for:
 - Test development
 - Debugging
@@ -113,70 +124,73 @@ npm run test:documentation
 npm run test:responsive
 ```
 
+---
+
 ## 🧪 Test Scenarios
 
 ### Navigation Test Suite (7 tests)
-
-**Objective:** Validate homepage and documentation navigation
+Objective: Validate homepage and documentation navigation
 
 **Test Flow:**
 
-1. **Homepage Verification** 🏠
-   - Verify page title "PokéAPI"
-   - Validate logo visibility
-   - Check navigation links
+🏠 Homepage Verification
+- Verify page title "PokéAPI"
+- Validate logo visibility
+- Check navigation links
 
-2. **Documentation Access** 📚
-   - Navigate from header
-   - Verify URL redirect
-   - Validate sections display
+📚 Documentation Access
+- Navigate from header
+- Verify URL redirect
+- Validate sections display
 
-3. **Multi-Section Navigation** 🔗
-   - Test About, Docs, GraphQL links
-   - Verify URL changes
-   - Data-driven approach
+🔗 Multi-Section Navigation
+- Test About, Docs, GraphQL links
+- Verify URL changes
+- Data-driven approach
 
-4. **Link Validation** ✅
-   - Test multiple identical links
-   - Re-query pattern for stability
-   - Verify all links functional
+✅ Link Validation
+- Test multiple identical links
+- Re-query pattern for stability
+- Verify all links functional
 
-5. **Documentation Structure** 📋
-   - Validate critical sections
-   - Check headers (10+ h2 elements)
-   - Verify anchor links (15+)
-   - Confirm code blocks exist
+📋 Documentation Structure
+- Validate critical sections
+- Check headers (10+ h2 elements)
+- Verify anchor links (15+)
+- Confirm code blocks exist
 
-6. **Anchor Navigation** ⚓
-   - Navigate to Pokemon, Berries, Moves
-   - Verify URL anchors
-   - Validate content display
+⚓ Anchor Navigation
+- Navigate to Pokemon, Berries, Moves
+- Verify URL anchors
+- Validate content display
 
-**Total Validations:** 25+ assertions
+**Total Validations: 25+ assertions**
+
+---
 
 ### Documentation Test Suite (2 tests)
-
-**Objective:** Search functionality and code example validation
+Objective: Search functionality and code example validation
 
 **Test Flow:**
 
-1. **API Explorer Search** 🔍
-   - Enter search query "pokemon"
-   - Verify results display
-   - Expand JSON viewer
-   - Validate JSON structure
+🔍 API Explorer Search
+- Enter search query "pokemon"
+- Verify results display
+- Expand JSON viewer
+- Validate JSON structure
 
-2. **Code Examples** 💻
-   - Navigate to endpoint section
-   - Handle collapsed/expanded states
-   - Parse JSON code
-   - Verify data accuracy
+💻 Code Examples
+- Navigate to endpoint section
+- Handle collapsed/expanded states
+- Parse JSON code
+- Verify data accuracy
 
-**Total Validations:** 8+ assertions
+**Total Validations: 8+ assertions**
+
+---
 
 ### Responsive Test Suite (3 tests)
-
-**Objective:** Validate responsive design
+Objective: Validate responsive design
 
 **Viewports Tested:**
 - 📱 Mobile: 375x667 (iPhone SE)
@@ -184,17 +198,19 @@ npm run test:responsive
 
 **Test Flow:**
 
-1. **Layout Validation** 📐
-   - Set viewport size
-   - Verify content visible
-   - Check no horizontal overflow
+📐 Layout Validation
+- Set viewport size
+- Verify content visible
+- Check no horizontal overflow
 
-2. **Navigation Accessibility** 🔗
-   - Verify links accessible
-   - Check important CTAs
-   - Validate GitHub link
+🔗 Navigation Accessibility
+- Verify links accessible
+- Check important CTAs
+- Validate GitHub link
 
-**Total Validations:** 10+ assertions
+**Total Validations: 10+ assertions**
+
+---
 
 ## 🏗️ Page Object Model
 
@@ -239,54 +255,57 @@ class DocumentationPage {
 }
 ```
 
+---
+
 ## 🎯 Best Practices Implemented
 
 ### 1. Code Organization
-- ✅ Page Object Model pattern
-- ✅ DRY principle
-- ✅ Separated test data in fixtures
-- ✅ Reusable page methods
+✅ Page Object Model pattern  
+✅ DRY principle  
+✅ Separated test data in fixtures  
+✅ Reusable page methods  
 
 ### 2. Test Reliability
-- ✅ Re-query pattern for stale elements
-- ✅ Explicit waits for animations
-- ✅ Proper selector strategies
-- ✅ Test isolation with beforeEach
+✅ Re-query pattern for stale elements  
+✅ Explicit waits for animations  
+✅ Proper selector strategies  
+✅ Test isolation with beforeEach  
 
 ### 3. Advanced Patterns
-- ✅ .nextUntil() for DOM navigation
-- ✅ Conditional state handling
-- ✅ JSON parsing for validation
-- ✅ Data-driven testing
+✅ .nextUntil() for DOM navigation  
+✅ Conditional state handling  
+✅ JSON parsing for validation  
+✅ Data-driven testing  
 
 ### 4. Debugging
-- ✅ Video recording
-- ✅ Screenshots on failure
-- ✅ Descriptive test names
-- ✅ Console logging
+✅ Video recording  
+✅ Screenshots on failure  
+✅ Descriptive test names  
+✅ Console logging  
 
 ### 5. Documentation
-- ✅ Comprehensive JSDoc comments
-- ✅ Clear method descriptions
-- ✅ Professional code structure
-
-## 👤 Author
-
-**[Your Name]**
-
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
-
-## 📧 Contact
-
-For questions or feedback: your.email@example.com
-
-## 🔗 Related Projects
-
-- [E-commerce Testing Suite](https://github.com/tyraelw/cypress-ecommerce-testing) - E2E testing with Cypress
-- [API Testing Project](link) - REST API automation
+✅ Comprehensive JSDoc comments  
+✅ Clear method descriptions  
+✅ Professional code structure  
 
 ---
 
+## 👤 Author
+**Isrrael Andres Toro Alvarez**
+
+- GitHub: [@tyraelw](https://github.com/tyraelw)
+- LinkedIn: [Isrrael Toro Alvarez](https://linkedin.com/in/isrrael-toro-alvarez)
+- Email: tyrael78w@gmail.com
+
+---
+
+## 📧 Contact
+For questions or feedback: tyrael78w@gmail.com
+
+## 🔗 Related Projects
+- [E-commerce Testing Suite](https://github.com/tyraelw/cypress-ecommerce-testing) - E2E testing with Cypress
+- [Trello API Testing](https://github.com/tyraelw/trello-api-testing) - REST API automation with Postman
+- [TodoMVC Testing Suite](https://github.com/tyraelw/todo-web-cypress) - E2E testing with Custom Commands
+
+---
 ⭐ If you find this project helpful, please consider giving it a star!
